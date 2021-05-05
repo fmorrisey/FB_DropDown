@@ -12,8 +12,8 @@ function App() {
   return (
     <Navbar>
       <Navitem icon={<PlusIcon />} />
-      <Navitem icon={<BellIcon />} />
       <Navitem icon={<MessengerIcon />} />
+      <Navitem icon={<BellIcon />} />
     </Navbar>
   );
 }
