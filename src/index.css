@@ -98,6 +98,8 @@ a {
   border-radius: var(--border-radius);
   padding: 1rem;
   overflow: hidden;
+
+  transition: height var(--speed) ease;
 }
 
 .menu-item {
@@ -111,4 +113,54 @@ a {
 
 .menu-item:hover {
   background-color: #525357;
+}
+
+.icon-right {
+  margin-left: auto;
+}
+
+.menu {
+  width: 100%;
+}
+
+/* MAIN MENU */
+/* CSS is doing the animations */
+/* Slide In to the right? */
+.menu-primary-enter {
+  position: absolute;
+  transform: translateX(-110%);
+}
+
+.menu-primary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+
+/* Slide Out */
+.menu-primary-exit {
+  position: absolute;
+}
+.menu-primary-exit-active {
+  transform: translateX(-110%);
+  transition: all var(--speed) ease;
+}
+
+/* SECONDARY MENU */
+/* Slide In to the left */
+.menu-secondary-enter {
+  transform: translateX(110%);
+}
+
+.menu-secondary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+
+/* Slide Out */
+.menu-secondary-exit {
+  position: absolute;
+}
+.menu-secondary-exit-active {
+  transform: translateX(110%);
+  transition: all var(--speed) ease;
 }
