@@ -6,6 +6,8 @@ import { ReactComponent as CogIcon } from "./icons/cog.svg";
 import { ReactComponent as ChevronIcon } from "./icons/chevron.svg";
 import { ReactComponent as ArrowIcon } from "./icons/arrow.svg";
 import { ReactComponent as BoltIcon } from "./icons/bolt.svg";
+import { Grid } from "react-feather";
+import AppsIcon from "@material-ui/icons/Apps";
 
 import React, { useState } from "react";
 import { CSSTransition } from "react-transition-group";
@@ -13,7 +15,7 @@ import { CSSTransition } from "react-transition-group";
 function App() {
   return (
     <Navbar>
-      <Navitem icon={<PlusIcon />} />
+      <Navitem icon={<AppsIcon />} />
       <Navitem icon={<MessengerIcon />} />
       <Navitem icon={<BellIcon />} />
 
