@@ -61,8 +61,13 @@ function DropdownMenu() {
     setMenuHeight(height);
   }
 
+  function DropdownUser() {
+    return <span>TEST</span>;
+  }
+
   function DropdownItem(props) {
     return (
+      // eslint-disable-next-line jsx-a11y/anchor-is-valid
       <a
         href="#"
         className="menu-item"
@@ -83,6 +88,26 @@ function DropdownMenu() {
       </a>
     );
   }
+
+  function DropdownHR() {
+    return <hr />;
+  }
+
+  function DropdownFooter() {
+    return (
+      <p classNames="dropdown-footer">
+        <a href="#">Privacy</a>
+        <b> · </b>
+        <a href="#">Terms</a>
+        <b> · </b>
+        <a href="#">Advertising</a>
+        <b> · </b>
+        <a href="#">Ad Choices</a>
+        <b> · </b>
+      </p>
+    );
+  }
+
   return (
     <div className="dropdown" style={{ height: menuHeight }}>
       {/* Main Menu */}
@@ -102,13 +127,14 @@ function DropdownMenu() {
             <br />
             See your profile
           </DropdownItem>
-
+          <DropdownHR />
           {/* FEEDBACK */}
           <DropdownItem leftIcon={<FeedbackIcon />}>
             Give Feedback
             <br />
             Help us improve the new Forrestbook
           </DropdownItem>
+          <DropdownHR />
 
           {/* SETTINGS */}
           <DropdownItem
@@ -141,7 +167,7 @@ function DropdownMenu() {
           <DropdownItem leftIcon={<ExitToAppIcon />}>
             <h4>Log Out</h4>
           </DropdownItem>
-          <DropdownItem>Privacy . Terms . Advertising</DropdownItem>
+          <DropdownFooter />
         </div>
       </CSSTransition>
 

@@ -37,6 +37,10 @@ a {
   text-decoration: none;
 }
 
+b {
+  color: var(--text-color);
+}
+
 hr {
   border-color: var(--border-color);
 }
@@ -115,6 +119,14 @@ hr {
   transition: height var(--speed) ease;
 }
 
+.dropdown-footer {
+}
+
+.dropdown-footer > a:hover {
+  color: var(--bg-accent);
+  text-decoration: underline !important;
+}
+
 .menu-item {
   height: 50px;
   display: flex;
@@ -123,6 +135,7 @@ hr {
   transition: background var(--speed);
   padding: 0.5rem;
   margin-right: 0.5rem;
+  text-decoration: none;
 }
 
 .menu-item:hover {
