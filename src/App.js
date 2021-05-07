@@ -11,6 +11,7 @@ import AppsIcon from "@material-ui/icons/Apps";
 
 import React, { useState } from "react";
 import { CSSTransition } from "react-transition-group";
+import classNames from "classnames";
 
 function App() {
   return (
@@ -67,7 +68,9 @@ function DropdownMenu() {
 
         {props.children}
 
-        <span className="icon-right">{props.rightIcon}</span>
+        <span className={props.rightIcon ? "icon-button icon-right" : ""}>
+          {props.rightIcon}
+        </span>
       </a>
     );
   }
@@ -106,10 +109,9 @@ function DropdownMenu() {
       >
         <div className="menu">
           <DropdownItem leftIcon={<ArrowIcon />} goToMenu="main" />
-          <DropdownItem>Settings</DropdownItem>
-          <DropdownItem>Settings</DropdownItem>
-          <DropdownItem>Settings</DropdownItem>
-          <DropdownItem>Settings</DropdownItem>
+          <DropdownItem leftIcon={<CogIcon />} rightIcon={<ChevronIcon />}>
+            Settings
+          </DropdownItem>
           <DropdownItem>Settings</DropdownItem>
         </div>
       </CSSTransition>
