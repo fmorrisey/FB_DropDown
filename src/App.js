@@ -8,10 +8,14 @@ import { ReactComponent as ArrowIcon } from "./icons/arrow.svg";
 import { ReactComponent as BoltIcon } from "./icons/bolt.svg";
 import { Grid } from "react-feather";
 import AppsIcon from "@material-ui/icons/Apps";
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import FeedbackIcon from "@material-ui/icons/Feedback";
+import HelpIcon from "@material-ui/icons/Help";
+import AccessibilityIcon from "@material-ui/icons/Accessibility";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 
 import React, { useState } from "react";
 import { CSSTransition } from "react-transition-group";
-import classNames from "classnames";
 
 function App() {
   return (
@@ -64,7 +68,9 @@ function DropdownMenu() {
         className="menu-item"
         onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
       >
-        <span className="icon-button">{props.leftIcon}</span>
+        <span className={props.leftIcon ? "icon-button" : ""}>
+          {props.leftIcon}
+        </span>
 
         {props.children}
 
@@ -87,20 +93,94 @@ function DropdownMenu() {
         // This allows React to toggle the classes
       >
         <div className="menu">
-          <DropdownItem>My Profile</DropdownItem>
+          {/* MY PROFILE */}
+          <DropdownItem leftIcon={<AccountCircleIcon />}>
+            Forrest Morrisey
+            <br />
+            See your profile
+          </DropdownItem>
+
+          {/* FEEDBACK */}
+          <DropdownItem leftIcon={<FeedbackIcon />}>
+            Give Feedback
+            <br />
+            Help us improve the new Forrestbook
+          </DropdownItem>
+
+          {/* SETTINGS */}
           <DropdownItem
             leftIcon={<CogIcon />}
             rightIcon={<ChevronIcon />}
             goToMenu="settings"
           >
-            Settings
+            <h4>Settings and Privacy</h4>
           </DropdownItem>
+
+          {/* SUPPORT */}
+          <DropdownItem
+            leftIcon={<HelpIcon />}
+            rightIcon={<ChevronIcon />}
+            goToMenu="support"
+          >
+            <h4>Help & Support</h4>
+          </DropdownItem>
+
+          {/* accessibility */}
+          <DropdownItem
+            leftIcon={<AccessibilityIcon />}
+            rightIcon={<ChevronIcon />}
+            goToMenu="accessibility"
+          >
+            <h4>Display & Accessibility</h4>
+          </DropdownItem>
+
+          {/* accessibility */}
+          <DropdownItem leftIcon={<ExitToAppIcon />}>
+            <h4>Log Out</h4>
+          </DropdownItem>
+          <DropdownItem>Privacy . Terms . Advertising</DropdownItem>
         </div>
       </CSSTransition>
 
       {/* Settings Menu */}
       <CSSTransition
         in={activeMenu === "settings"}
+        timeout={500}
+        classNames="menu-secondary"
+        unmountOnExit
+        onEnter={calcHeight}
+        // This allows React to toggle the classes
+      >
+        <div className="menu">
+          <DropdownItem leftIcon={<ArrowIcon />} goToMenu="main" />
+          <DropdownItem leftIcon={<CogIcon />} rightIcon={<ChevronIcon />}>
+            Settings
+          </DropdownItem>
+          <DropdownItem>Settings</DropdownItem>
+        </div>
+      </CSSTransition>
+
+      {/* Support Menu */}
+      <CSSTransition
+        in={activeMenu === "support"}
+        timeout={500}
+        classNames="menu-secondary"
+        unmountOnExit
+        onEnter={calcHeight}
+        // This allows React to toggle the classes
+      >
+        <div className="menu">
+          <DropdownItem leftIcon={<ArrowIcon />} goToMenu="main" />
+          <DropdownItem leftIcon={<CogIcon />} rightIcon={<ChevronIcon />}>
+            Settings
+          </DropdownItem>
+          <DropdownItem>Settings</DropdownItem>
+        </div>
+      </CSSTransition>
+
+      {/* Accessibility Menu */}
+      <CSSTransition
+        in={activeMenu === "accessibility"}
         timeout={500}
         classNames="menu-secondary"
         unmountOnExit

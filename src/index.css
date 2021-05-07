@@ -21,6 +21,7 @@ code {
   --nav-size: 60px;
   /* --nav-size: 3.13vw; */
   --border: 1px solid #474a4d;
+  --border-color: #474a4d;
   --border-radius: 8px;
   --speed: 500ms;
 }
@@ -34,6 +35,10 @@ ul {
 a {
   color: var(--text-color);
   text-decoration: none;
+}
+
+hr {
+  border-color: var(--border-color);
 }
 
 /* Navbar */
@@ -85,6 +90,10 @@ a {
   height: 20px;
 }
 
+.icon-right {
+  margin-left: auto;
+}
+
 /* Dropdown Menu */
 
 .dropdown {
@@ -113,10 +122,6 @@ a {
 
 .menu-item:hover {
   background-color: #525357;
-}
-
-.icon-right {
-  margin-left: auto;
 }
 
 .menu {
