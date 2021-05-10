@@ -6,6 +6,7 @@ import { CSSTransition } from "react-transition-group";
 
 // ASSETS / INTERNALS
 
+// LOCAL
 import { ReactComponent as BellIcon } from "./icons/bell.svg";
 import { ReactComponent as MessengerIcon } from "./icons/messenger.svg";
 import { ReactComponent as CaretIcon } from "./icons/caret.svg";
@@ -14,12 +15,18 @@ import { ReactComponent as CogIcon } from "./icons/cog.svg";
 import { ReactComponent as ChevronIcon } from "./icons/chevron.svg";
 import { ReactComponent as ArrowIcon } from "./icons/arrow.svg";
 import { ReactComponent as BoltIcon } from "./icons/bolt.svg";
+
+// @MATERIAL UI
 import AppsIcon from "@material-ui/icons/Apps";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import FeedbackIcon from "@material-ui/icons/Feedback";
 import HelpIcon from "@material-ui/icons/Help";
 import AccessibilityIcon from "@material-ui/icons/Accessibility";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import EnhancedEncryptionIcon from "@material-ui/icons/EnhancedEncryption";
+import LockIcon from "@material-ui/icons/Lock";
+import FormatListBulletedIcon from "@material-ui/icons/FormatListBulleted";
+import LanguageIcon from "@material-ui/icons/Language";
 
 function App() {
   return (
@@ -51,7 +58,9 @@ function Navitem(props) {
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
       <a
         href="#"
-        className={open ? "icon-button icon-button-active" : "icon-button"}
+        className={
+          open ? " icon-button__BG icon-button-active" : " icon-button__BG"
+        }
         onClick={() => setOpen(!open)}
       >
         {props.icon}
@@ -69,10 +78,23 @@ function DropdownMenu() {
   function calcHeight(el) {
     const height = el.offsetHeight;
     setMenuHeight(height);
+    console.log(height);
   }
 
   function DropdownUser() {
     return <span>TEST</span>;
+  }
+
+  function DropdownHeader(props) {
+    const changeMenu = () => props.goToMenu && setActiveMenu(props.goToMenu);
+    return (
+      <a href="#" className="menu-header" onClick={changeMenu}>
+        <span className={props.leftIcon ? "icon-button__noBG icon-left" : ""}>
+          {props.leftIcon}
+        </span>
+        <h2>{props.children}</h2>
+      </a>
+    );
   }
 
   function DropdownItem(props) {
@@ -81,16 +103,13 @@ function DropdownMenu() {
     return (
       // eslint-disable-next-line jsx-a11y/anchor-is-valid
       <a href="#" className="menu-item" onClick={changeMenu}>
-        <span
-          className={props.leftIcon ? "icon-button icon-left" : ""}
-          style={{}}
-        >
+        <span className={props.leftIcon ? " icon-button__BG icon-left" : ""}>
           {props.leftIcon}
         </span>
 
         {props.children}
 
-        <span className={props.rightIcon ? "icon-button icon-right" : ""}>
+        <span className={props.rightIcon ? " icon-button__BG icon-right" : ""}>
           {props.rightIcon}
         </span>
       </a>
@@ -158,7 +177,7 @@ function DropdownMenu() {
             rightIcon={<ChevronIcon />}
             goToMenu="support"
           >
-            <h4>Help & Support</h4>
+            <h4>Help &amp; Support</h4>
           </DropdownItem>
 
           {/* accessibility */}
@@ -167,7 +186,7 @@ function DropdownMenu() {
             rightIcon={<ChevronIcon />}
             goToMenu="accessibility"
           >
-            <h4>Display & Accessibility</h4>
+            <h4>Display &amp; Accessibility</h4>
           </DropdownItem>
 
           {/* accessibility */}
@@ -188,11 +207,21 @@ function DropdownMenu() {
         // This allows React to toggle the classes
       >
         <div className="menu">
-          <DropdownItem leftIcon={<ArrowIcon />} goToMenu="main" />
-          <DropdownItem leftIcon={<CogIcon />} rightIcon={<ChevronIcon />}>
-            Settings
+          <DropdownHeader leftIcon={<ArrowIcon />} goToMenu="main">
+            Settings &amp; Privacy
+          </DropdownHeader>
+          <DropdownItem leftIcon={<CogIcon />}>Settings</DropdownItem>
+          <DropdownItem leftIcon={<EnhancedEncryptionIcon />}>
+            Privacy Checkup
           </DropdownItem>
-          <DropdownItem>Settings</DropdownItem>
+          <DropdownItem leftIcon={<LockIcon />}>Privacy Shortcuts</DropdownItem>
+          <DropdownItem leftIcon={<FormatListBulletedIcon />}>
+            Activity Logs
+          </DropdownItem>
+          <DropdownItem leftIcon={<CogIcon />}>
+            News Feed Preferences
+          </DropdownItem>
+          <DropdownItem leftIcon={<LanguageIcon />}>Language</DropdownItem>
         </div>
       </CSSTransition>
 

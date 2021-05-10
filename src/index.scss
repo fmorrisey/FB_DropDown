@@ -25,7 +25,10 @@ a {
   color: $text-color;
 }
 
-b {
+b,
+h1,
+h2,
+h3 {
   color: $text-color;
 }
 
@@ -63,7 +66,6 @@ hr {
     $button-size: calc(#{$nav-size} * 0.5);
     width: $button-size;
     height: $button-size;
-    background-color: #484a4d;
     border-radius: 50%;
     padding: 5px;
     margin: 2px;
@@ -71,6 +73,19 @@ hr {
     justify-content: center;
     align-items: center;
     transition: filter 300ms;
+
+    &__BG {
+      @extend .icon-button;
+      background-color: #484a4d;
+    }
+
+    &__noBG {
+      @extend .icon-button;
+      background-color: none;
+      &:hover {
+        background-color: #484a4d;
+      }
+    }
 
     &:hover {
       filter: brightness(1.2);
@@ -107,7 +122,7 @@ hr {
   top: 50px;
   /* width: 15.63vw; */
   width: 360px;
-  transform: translateX(-90%);
+  transform: translateX(-45%);
   background-color: $bg;
   border: $border;
   border-radius: $border-radius;
@@ -128,7 +143,9 @@ hr {
 
 .menu {
   width: 100%;
-  &-item {
+
+  &-item,
+  &-header {
     height: 50px;
     display: flex;
     align-items: center;
