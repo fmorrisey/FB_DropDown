@@ -32,6 +32,26 @@ h3 {
   color: $text-color;
 }
 
+.sub {
+  &-title {
+    color: $text-color;
+    font-weight: 500;
+    line-height: 1.25rem;
+    white-space: nowrap;
+  }
+
+  &-text {
+    color: $text-color;
+    font-weight: 300;
+  }
+}
+
+.sub-text {
+  color: $text-color;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
 hr {
   border-color: $border-color;
 }
@@ -130,15 +150,18 @@ hr {
   overflow: hidden;
 
   transition: height $speed ease;
-}
 
-.dropdown-footer {
-  text-decoration: none;
-}
-
-.dropdown-footer > a:hover {
-  color: $bg-accent;
-  text-decoration: underline;
+  &-footer {
+    font-weight: 300;
+    font-size: 0.95rem;
+    a:link {
+      color: $text-color;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .menu {
@@ -146,7 +169,7 @@ hr {
 
   &-item,
   &-header {
-    height: 50px;
+    height: 40px;
     display: flex;
     align-items: center;
     border-radius: $border-radius;

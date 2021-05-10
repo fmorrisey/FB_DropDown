@@ -122,7 +122,7 @@ function DropdownMenu() {
 
   function DropdownFooter() {
     return (
-      <p classNames="dropdown-footer">
+      <span className="dropdown-footer">
         <a href="#">Privacy</a>
         <b> · </b>
         <a href="#">Terms</a>
@@ -131,7 +131,12 @@ function DropdownMenu() {
         <b> · </b>
         <a href="#">Ad Choices</a>
         <b> · </b>
-      </p>
+        <a href="#">Cookies</a>
+        <b> · </b>
+        <a href="#">More</a>
+        <b> · </b>
+        <a>Forrestbook @ 2021</a>
+      </span>
     );
   }
 
@@ -158,7 +163,7 @@ function DropdownMenu() {
           <DropdownItem leftIcon={<FeedbackIcon />}>
             Give Feedback
             <br />
-            Help us improve the new Forrestbook
+            help us improve the new Forrestbook
           </DropdownItem>
           <DropdownHR />
 
