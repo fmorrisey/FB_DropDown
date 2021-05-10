@@ -34,7 +34,6 @@ ul {
 
 a {
   color: var(--text-color);
-  text-decoration: none;
 }
 
 b {
@@ -106,7 +105,7 @@ hr {
 
 .dropdown {
   position: absolute;
-  top: 58px;
+  top: 50px;
   /* width: 15.63vw; */
   width: 360px;
   transform: translateX(-45%);
@@ -120,11 +119,12 @@ hr {
 }
 
 .dropdown-footer {
+  text-decoration: none;
 }
 
 .dropdown-footer > a:hover {
   color: var(--bg-accent);
-  text-decoration: underline !important;
+  text-decoration: underline;
 }
 
 .menu-item {
