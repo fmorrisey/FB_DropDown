@@ -87,6 +87,10 @@ hr {
   background-color: #243750;
 }
 
+.icon-button-active svg {
+  fill: #2d86ff !important;
+}
+
 .icon-button:hover {
   filter: brightness(1.2);
 }
