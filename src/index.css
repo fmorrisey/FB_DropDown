@@ -83,6 +83,10 @@ hr {
   transition: filter 300ms;
 }
 
+.icon-button-active {
+  background-color: #243750;
+}
+
 .icon-button:hover {
   filter: brightness(1.2);
 }

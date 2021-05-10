@@ -40,10 +40,16 @@ function Navbar(props) {
 }
 
 function Navitem(props) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+
   return (
     <li className="nav-item">
-      <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
+      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+      <a
+        href="#"
+        className={open ? "icon-button icon-button-active" : "icon-button"}
+        onClick={() => setOpen(!open)}
+      >
         {props.icon}
       </a>
 
@@ -66,13 +72,11 @@ function DropdownMenu() {
   }
 
   function DropdownItem(props) {
+    const changeMenu = () => props.goToMenu && setActiveMenu(props.goToMenu);
+
     return (
       // eslint-disable-next-line jsx-a11y/anchor-is-valid
-      <a
-        href="#"
-        className="menu-item"
-        onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
-      >
+      <a href="#" className="menu-item" onClick={changeMenu}>
         <span
           className={props.leftIcon ? "icon-button icon-left" : ""}
           style={{}}
@@ -115,10 +119,9 @@ function DropdownMenu() {
         in={activeMenu === "main"}
         unmountOnExit
         timeout={500}
+        // This allows React to toggle the classes
         classNames="menu-primary"
         onEnter={calcHeight}
-
-        // This allows React to toggle the classes
       >
         <div className="menu">
           {/* MY PROFILE */}
