@@ -1,3 +1,11 @@
+// BUILT INS
+import React, { useState } from "react";
+
+// PACKAGES
+import { CSSTransition } from "react-transition-group";
+
+// ASSETS / INTERNALS
+
 import { ReactComponent as BellIcon } from "./icons/bell.svg";
 import { ReactComponent as MessengerIcon } from "./icons/messenger.svg";
 import { ReactComponent as CaretIcon } from "./icons/caret.svg";
@@ -6,16 +14,12 @@ import { ReactComponent as CogIcon } from "./icons/cog.svg";
 import { ReactComponent as ChevronIcon } from "./icons/chevron.svg";
 import { ReactComponent as ArrowIcon } from "./icons/arrow.svg";
 import { ReactComponent as BoltIcon } from "./icons/bolt.svg";
-import { Grid } from "react-feather";
 import AppsIcon from "@material-ui/icons/Apps";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import FeedbackIcon from "@material-ui/icons/Feedback";
 import HelpIcon from "@material-ui/icons/Help";
 import AccessibilityIcon from "@material-ui/icons/Accessibility";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
-
-import React, { useState } from "react";
-import { CSSTransition } from "react-transition-group";
 
 function App() {
   return (
