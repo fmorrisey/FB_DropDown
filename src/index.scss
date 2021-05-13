@@ -133,6 +133,29 @@ hr {
   &-left {
     margin-right: 0.5rem;
   }
+
+  &-privacy {
+    padding-top: 1rem;
+    svg {
+      fill: $text-color-alt;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  &-like {
+    margin-right: 0.5rem;
+    svg {
+      fill: $text-color-alt;
+    }
+  }
+
+  &-comment {
+    margin-right: 0.5rem;
+  }
+  &-share {
+    margin-right: 0.5rem;
+  }
 }
 
 /* Dropdown Menu */
@@ -224,4 +247,78 @@ hr {
 .menu-secondary-exit-active {
   transform: translateX(110%);
   transition: all $speed ease;
+}
+
+.feed {
+  display: flex;
+  max-width: 680px;
+  margin: 0 auto;
+  flex-direction: column;
+
+  .content {
+    font-size: 1.2rem;
+  }
+  .post {
+    color: $text-color;
+    background-color: #242526;
+    margin: 10px;
+    padding: 10px;
+
+    &-engagement {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    &-comment {
+      margin-left: 0.5rem;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #3a3b3c;
+      color: $text-color;
+      border-radius: 25px;
+      border: 0px;
+
+      width: 80%;
+      height: 30px;
+    }
+
+    &-item {
+      height: 30px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: $border-radius;
+      transition: background $speed;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+    }
+
+    &-item:hover {
+      background-color: #525357;
+    }
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .top {
+  }
+
+  .username {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .time {
+    display: block;
+  }
+
+  .content {
+    padding: 0.5rem;
+  }
 }

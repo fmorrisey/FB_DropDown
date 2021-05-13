@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "user": "Forrest Morrisey",
+    "date": "12/03/1990",
+    "time": "1h",
+    "post": "Testing out forrestbook",
+    "privacy": "public"
+  },
+  {
+    "id": 2,
+    "user": "Forrest Morrisey",
+    "date": "12/03/1990",
+    "time": "May 6th at 12:34",
+    "post": "Testing out forrestbook",
+    "privacy": "private"
+  },
+  {
+    "id": 3,
+    "user": "Forrest Morrisey",
+    "date": "12/03/1990",
+    "time": "14:44pm CST",
+    "post": "Testing out forrestbook",
+    "privacy": "friends"
+  },
+  {
+    "id": 4,
+    "user": "Forrest Morrisey",
+    "date": "12/03/1990",
+    "time": "14:44pm CST",
+    "post": "Testing out forrestbook",
+    "privacy": "friends"
+  },
+  {
+    "id": 5,
+    "user": "Forrest Morrisey",
+    "date": "12/03/1990",
+    "time": "14:44pm CST",
+    "post": "Testing out forrestbook",
+    "privacy": "friends"
+  }
+]
