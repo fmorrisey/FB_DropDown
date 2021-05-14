@@ -24,11 +24,57 @@
     "time": "14:44pm CST",
     "privacy": "friends",
     "type": "image",
-    "post": "",
+    "post": "Fill Murray",
     "src": "http://www.fillmurray.com/500/400"
   },
   {
     "id": 4,
+    "user": "Forrest Morrisey",
+    "date": "12/03/1990",
+    "time": "14:44pm CST",
+    "type": "text",
+    "post": "Testing out forrestbook",
+    "privacy": "friends"
+  },
+  {
+    "id": 5,
+    "user": "Forrest Morrisey",
+    "date": "12/03/1990",
+    "time": "14:44pm CST",
+    "type": "text",
+    "post": "Testing out forrestbook",
+    "privacy": "friends"
+  },
+  {
+    "id": 6,
+    "user": "Forrest Morrisey",
+    "date": "12/03/1990",
+    "time": "1h",
+    "post": "Testing out forrestbook",
+    "type": "text",
+    "privacy": "public"
+  },
+  {
+    "id": 7,
+    "user": "Forrest Morrisey",
+    "date": "12/03/1990",
+    "time": "May 6th at 12:34",
+    "privacy": "private",
+    "type": "text",
+    "post": "Testing out forrestbook"
+  },
+  {
+    "id": 8,
+    "user": "Forrest Morrisey",
+    "date": "12/03/1990",
+    "time": "14:44pm CST",
+    "privacy": "friends",
+    "type": "image",
+    "post": "Fill Murray",
+    "src": "http://www.fillmurray.com/700/400"
+  },
+  {
+    "id": 9,
     "user": "Forrest Morrisey",
     "date": "12/03/1990",
     "time": "14:44pm CST",
