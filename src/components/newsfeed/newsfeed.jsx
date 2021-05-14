@@ -90,12 +90,12 @@ export default function Newsfeed(props) {
           </span>
         </div>
         <hr />
-        <div>
-          <span>
-            <AccountCircleIcon className="icon-button" />
+        <div className="post-comment">
+          <span className="icon-account__small icon-left">
+            <AccountCircleIcon />
           </span>
           <input
-            className="post-comment"
+            className="post-comment__input"
             placeholder="Write a comment..."
           ></input>
         </div>

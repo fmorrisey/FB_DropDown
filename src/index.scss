@@ -169,6 +169,13 @@ hr {
       width: 20px;
       height: 20px;
     }
+
+    &__small {
+      @extend .icon-account;
+      $button-size: calc(#{$nav-size} * 0.7);
+      width: $button-size;
+      height: $button-size;
+    }
   }
 
   &-like {
@@ -301,20 +308,31 @@ hr {
     }
 
     &-comment {
-      margin-left: 0.5rem;
-      align-items: center;
-      justify-content: flex-start;
-      background-color: #3a3b3c;
-      color: $text-color;
-      border-radius: 25px;
-      border: 0px;
+      display: flex;
+      justify-content: flex-end;
 
-      width: 80%;
-      height: 30px;
+      &__input {
+        padding: 8px 12px;
+        margin-right: auto;
+
+        background-color: #3a3b3c;
+
+        font-size: 1rem;
+        color: $text-color;
+        border-radius: 25px;
+        border: 0px;
+
+        width: 85%;
+        height: 30px;
+        &:focus {
+          outline-color: transparent;
+          outline-style: none;
+        }
+      }
     }
 
     &-item {
-      height: 30px;
+      height: 20px;
       width: 100%;
       display: flex;
       align-items: center;
