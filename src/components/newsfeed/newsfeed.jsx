@@ -14,8 +14,23 @@ import CallMadeIcon from "@material-ui/icons/CallMade";
 
 export default function Newsfeed(props) {
   const posts = feed.map((item, index) => {
+    function PostImage(props) {
+      console.log(props.image);
+      if (props.image) {
+        return (
+          <div className="post-image">
+            <a className="img-wrapper" href="#">
+              <img src={item.src} alt={item.type} />
+            </a>
+          </div>
+        );
+      }
+      if (!props.image) {
+        return null;
+      }
+    }
+
     function Privacy(props) {
-      console.log(props.access);
       if (props.access === "public") {
         return (
           <span className="icon-privacy">
@@ -38,13 +53,13 @@ export default function Newsfeed(props) {
         );
       }
       if (null) {
-        return "FUCK";
+        return "NULL";
       }
     }
     return (
       <div key={index} className="post">
         <div className="header">
-          <span className="icon-button__BG icon-left">
+          <span className="icon-account icon-left">
             <AccountCircleIcon />
           </span>
           <div className="top">
@@ -59,7 +74,9 @@ export default function Newsfeed(props) {
         </div>
         <div className="content">
           <p>{item.post}</p>
+          <PostImage image={item.src} />
         </div>
+
         <hr />
         <div className="post-engagement">
           <span className="post-item">

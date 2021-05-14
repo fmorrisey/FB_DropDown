@@ -53,7 +53,8 @@ h3 {
 }
 
 hr {
-  border-color: $border-color;
+  color: $border-color;
+  border: 0.15px solid $border-color;
 }
 
 /* Navbar */
@@ -135,11 +136,38 @@ hr {
   }
 
   &-privacy {
-    padding-top: 1rem;
+    display: inline-block;
+    position: absolute;
+    margin-left: 0.25rem;
+
     svg {
       fill: $text-color-alt;
       width: 15px;
       height: 15px;
+    }
+  }
+
+  &-account {
+    $button-size: calc(#{$nav-size} * 0.65);
+    width: $button-size;
+    height: $button-size;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 20x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 300ms;
+    background-color: #484a4d;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+
+    svg {
+      fill: $text-color;
+      width: 20px;
+      height: 20px;
     }
   }
 
@@ -259,10 +287,12 @@ hr {
     font-size: 1.2rem;
   }
   .post {
+    $content-padding: 10px;
     color: $text-color;
     background-color: #242526;
     margin: 10px;
-    padding: 10px;
+    padding: $content-padding;
+    border-radius: 10px;
 
     &-engagement {
       display: flex;
@@ -298,6 +328,16 @@ hr {
     &-item:hover {
       background-color: #525357;
     }
+
+    &-image {
+      text-align: center;
+      .img-wrapper {
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
   }
 
   .header {
@@ -312,9 +352,12 @@ hr {
     display: block;
     font-size: 1rem;
     font-weight: bold;
+    line-height: 1.5em;
   }
 
   .time {
+    color: $text-color-alt;
+    font-size: 0.75rem;
     display: block;
   }
 

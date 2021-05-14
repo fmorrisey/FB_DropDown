@@ -5,6 +5,7 @@
     "date": "12/03/1990",
     "time": "1h",
     "post": "Testing out forrestbook",
+    "type": "text",
     "privacy": "public"
   },
   {
@@ -12,22 +13,26 @@
     "user": "Forrest Morrisey",
     "date": "12/03/1990",
     "time": "May 6th at 12:34",
-    "post": "Testing out forrestbook",
-    "privacy": "private"
+    "privacy": "private",
+    "type": "text",
+    "post": "Testing out forrestbook"
   },
   {
     "id": 3,
     "user": "Forrest Morrisey",
     "date": "12/03/1990",
     "time": "14:44pm CST",
-    "post": "Testing out forrestbook",
-    "privacy": "friends"
+    "privacy": "friends",
+    "type": "image",
+    "post": "",
+    "src": "http://www.fillmurray.com/500/400"
   },
   {
     "id": 4,
     "user": "Forrest Morrisey",
     "date": "12/03/1990",
     "time": "14:44pm CST",
+    "type": "text",
     "post": "Testing out forrestbook",
     "privacy": "friends"
   },
@@ -36,6 +41,7 @@
     "user": "Forrest Morrisey",
     "date": "12/03/1990",
     "time": "14:44pm CST",
+    "type": "text",
     "post": "Testing out forrestbook",
     "privacy": "friends"
   }
