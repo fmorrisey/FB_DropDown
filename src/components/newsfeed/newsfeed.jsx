@@ -1,5 +1,6 @@
 import React from "react";
 import feed from "../../assets/data/feed.json";
+import "./newsfeed.scss";
 
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
@@ -18,7 +19,7 @@ export default function Newsfeed(props) {
       console.log(props.image);
       if (props.image) {
         return (
-          <div className="post-image">
+          <div key={`post-${index}`} className="post-image">
             <a className="img-wrapper" href="#">
               <img src={item.src} alt={item.type} />
             </a>
