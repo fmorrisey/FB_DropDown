@@ -6,6 +6,9 @@ import Navbar from "./components/navbar/navbar.jsx";
 import Navitem from "./components/navbar/navitem.jsx";
 import DropdownMenu from "./components/dropdownmenu/dropdownmenu";
 import Newsfeed from "./components/newsfeed/newsfeed";
+import Messenger from "./components/messenger/messenger.jsx";
+
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 // LOCAL
 import { ReactComponent as BellIcon } from "./assets/icons/bell.svg";
@@ -19,6 +22,7 @@ function App() {
   return (
     <>
       <Navbar>
+        <Navitem icon={<FacebookIcon />} />
         <Navitem icon={<AppsIcon />} />
         <Navitem icon={<MessengerIcon />} />
         <Navitem icon={<BellIcon />} />
@@ -27,7 +31,10 @@ function App() {
           <DropdownMenu></DropdownMenu>
         </Navitem>
       </Navbar>
-      <Newsfeed />
+      <div className="flex-row">
+        <Newsfeed />
+        <Messenger />
+      </div>
     </>
   );
 }

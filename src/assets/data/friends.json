@@ -1,0 +1,30 @@
+[
+  {
+    "objectId": 1,
+    "user": "Forrest Morrisey",
+    "active": true,
+    "last active": null,
+    "profile": "../icons/"
+  },
+  {
+    "objectId": 2,
+    "user": "Charlie Keen",
+    "active": true,
+    "last active": null,
+    "profile": "../icons/"
+  },
+  {
+    "objectId": 3,
+    "user": "Kyle Broker",
+    "active": false,
+    "last active": 19,
+    "profile": "../icons/"
+  },
+  {
+    "objectId": 4,
+    "user": "Sammi Shmupe",
+    "active": true,
+    "last active": null,
+    "profile": "../icons/"
+  }
+]
