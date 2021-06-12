@@ -110,13 +110,18 @@
     }
 
     &-last {
-      color: green;
-      border-radius: 5%;
+      background-color: #364a37;
+      border: 2px solid $bg-body;
+      color: #43a059;
+      padding-right: 22px;
+      padding-left: 2px;
+      padding-bottom: 7px;
+      border-radius: 10px;
       position: absolute;
       z-index: 10;
       bottom: 0;
       right: 5px;
-      transform: translateY(155%);
+      transform: translate(70%, 140%);
       width: 12px;
       height: 12px;
     }

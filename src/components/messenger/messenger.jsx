@@ -4,6 +4,10 @@ import "./messenger.scss";
 
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 
+import VideoCallIcon from "@material-ui/icons/VideoCall";
+import SearchIcon from "@material-ui/icons/Search";
+import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+
 export default function messenger(props) {
   const friendsList = friends.map((item, index) => {
     function ActiveUser(props) {
@@ -33,6 +37,16 @@ export default function messenger(props) {
 
   return (
     <div>
+      <div>
+        <span>
+          <h3>Contacts</h3>
+        </span>
+        <span className="icon icon-button">
+          <VideoCallIcon />
+          <SearchIcon />
+          <MoreHorizIcon />
+        </span>
+      </div>
       <div className="messenger">{friendsList}</div>
     </div>
   );
