@@ -41,11 +41,11 @@ export default function messenger(props) {
         <span>
           <h3>Contacts</h3>
         </span>
-        <span className="icon icon-button">
+        {/* <span className="icon icon-button">
           <VideoCallIcon />
           <SearchIcon />
           <MoreHorizIcon />
-        </span>
+        </span> */}
       </div>
       <div className="messenger">{friendsList}</div>
     </div>
