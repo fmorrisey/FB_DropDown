@@ -3,9 +3,10 @@
 
 .feed {
   display: flex;
-  max-width: 680px;
+  width: clamp(40vw, 900px, 60vw);
   margin: 0 auto;
   flex-direction: column;
+  justify-content: center;
 
   .content {
     font-size: 1.2rem;
@@ -17,6 +18,7 @@
     margin: 10px;
     padding: $content-padding;
     border-radius: 10px;
+    width: clamp(30vw, 680px, 35vw);
 
     &-engagement {
       display: flex;

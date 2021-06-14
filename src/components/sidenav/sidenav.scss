@@ -3,7 +3,7 @@
 
 .sidenav {
   display: flex;
-  max-width: 30vw;
+  min-width: clamp(18vw, 200px, 20vw);
   margin: 0 auto;
   flex-direction: column;
 

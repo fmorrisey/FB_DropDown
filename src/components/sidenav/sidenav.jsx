@@ -1,7 +1,7 @@
 import React from "react";
-import "./sideNav.scss";
+import "./sidenav.scss";
 
-export default function sideNav() {
+export default function SideNav() {
   return (
     <div className="sidenav">
       <p>TEST</p>

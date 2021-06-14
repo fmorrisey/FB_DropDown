@@ -3,8 +3,7 @@
 
 .messenger {
   display: flex;
-  max-width: 30vw;
-  min-width: clamp(20vw, 250px, 25vw);
+  width: clamp(18vw, 200px, 20vw);
   flex-direction: column;
 
   .friend {
