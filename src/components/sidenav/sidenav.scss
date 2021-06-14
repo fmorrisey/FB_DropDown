@@ -1,0 +1,11 @@
+@import "../../scss/variables";
+@import "../../scss/utils";
+
+.sidenav {
+  display: flex;
+  max-width: 30vw;
+  margin: 0 auto;
+  flex-direction: column;
+
+  color: $text-color;
+}
