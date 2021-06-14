@@ -23,22 +23,20 @@ export default function messenger(props) {
     }
 
     return (
-      <div key={index} className="friend">
-        <div className="header">
-          <span className="icon-account icon-left">
-            <AccountCircleIcon />
-            <ActiveUser />
-          </span>
-          <span className="username">{item.user}</span>
-        </div>
+      <div key={index} className="friend-item">
+        <span className="icon-account icon-left">
+          <AccountCircleIcon />
+          <ActiveUser />
+        </span>
+        <span className="username">{item.user}</span>
       </div>
     );
   });
 
   return (
-    <div>
+    <div className="messenger">
       <div>
-        <span>
+        <span className="header">
           <h3>Contacts</h3>
         </span>
         {/* <span className="icon icon-button">
@@ -47,7 +45,7 @@ export default function messenger(props) {
           <MoreHorizIcon />
         </span> */}
       </div>
-      <div className="messenger">{friendsList}</div>
+      <div>{friendsList}</div>
     </div>
   );
 }

@@ -3,13 +3,9 @@
 
 .messenger {
   display: flex;
-  max-width: 680px;
-  margin: 0 auto;
+  max-width: 30vw;
+  min-width: clamp(20vw, 250px, 25vw);
   flex-direction: column;
-
-  .content {
-    font-size: 1.2rem;
-  }
 
   .friend {
     $content-padding: 10px;
@@ -17,50 +13,20 @@
     background-color: $bg-body;
     margin: 0px;
     margin-right: 2vw;
-    margin-left: 2vw;
+    // margin-left: 2vw;
     padding: $content-padding;
     border-radius: 10px;
 
-    // &-engagement {
-    //   display: flex;
-    //   flex-direction: row;
-    //   justify-content: space-around;
-    // }
-
-    // &-comment {
-    //   display: flex;
-    //   justify-content: flex-end;
-
-    //   &__input {
-    //     padding: 8px 12px;
-    //     margin-right: auto;
-
-    //     background-color: #3a3b3c;
-
-    //     font-size: 1rem;
-    //     color: $text-color;
-    //     border-radius: 25px;
-    //     border: 0px;
-
-    //     width: 85%;
-    //     height: 30px;
-    //     &:focus {
-    //       outline-color: transparent;
-    //       outline-style: none;
-    //     }
-    //   }
-    // }
-
     &-item {
-      height: 20px;
+      @extend .friend;
       width: 100%;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: start;
+      justify-content: start;
       border-radius: $border-radius;
       transition: background $speed;
       padding: 0.5rem;
-      margin-right: 0.5rem;
+      //   margin-right: 0.5rem;
     }
 
     &-item:hover {
@@ -81,6 +47,9 @@
   .header {
     display: flex;
     flex-direction: row;
+    padding-inline: 0.5rem;
+    padding-right: 0.5rem;
+    color: $text-color-alt;
   }
 
   .username {
@@ -131,9 +100,5 @@
     color: $text-color-alt;
     font-size: 0.75rem;
     display: block;
-  }
-
-  .content {
-    padding: 0.5rem;
   }
 }
