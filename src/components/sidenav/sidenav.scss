@@ -3,9 +3,44 @@
 
 .sidenav {
   display: flex;
-  width: clamp(18vw, 200px, 20vw);
-  margin: 0 auto;
+  width: clamp(22vw, 200px, 33vw);
   flex-direction: column;
-
+  margin-top: 1vw;
   color: $text-color;
+
+  .side {
+    $content-padding: 10px;
+    color: $text-color;
+    background-color: $bg-body;
+    margin: 0.25vw;
+    padding: $content-padding;
+    border-radius: 10px;
+
+    &-item {
+      @extend .side;
+      padding: 0px 8px;
+      width: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      border-radius: $border-radius;
+      transition: background $speed;
+      padding: 0.5rem;
+      //   margin-right: 0.5rem;
+    }
+
+    &-item:hover {
+      background-color: #525357;
+      cursor: pointer;
+    }
+
+    .display {
+      display: flex;
+      font-size: 1.05rem;
+      font-weight: bold;
+      line-height: 1.5em;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
 }
