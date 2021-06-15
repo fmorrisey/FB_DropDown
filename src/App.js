@@ -21,6 +21,10 @@ import UserData from "./assets/data/user.json";
 // @MATERIAL UI
 import FacebookIcon from "@material-ui/icons/Facebook";
 import AppsIcon from "@material-ui/icons/Apps";
+import PeopleIcon from "@material-ui/icons/People";
+import RestoreIcon from "@material-ui/icons/Restore";
+import EmojiFlagsIcon from "@material-ui/icons/EmojiFlags";
+import Groups from "@material-ui/icons/SupervisedUserCircleOutlined";
 
 function App() {
   return (
@@ -37,7 +41,11 @@ function App() {
       <div className="flex-row">
         <SideNavBar>
           <SideNavItem user={UserData} />
-          <SideNavItem icon={<AppsIcon />} display={"Friends"} />
+          <SideNavItem icon={<PeopleIcon />} display={"Friends"} />
+          <SideNavItem icon={<RestoreIcon />} display={"Memories"} />
+          <SideNavItem icon={<EmojiFlagsIcon />} display={"Pages"} />
+          <SideNavItem icon={<Groups />} display={"Groups"} />
+          <SideNavItem icon={<CaretIcon />} display={"See More"} />
         </SideNavBar>
         <Newsfeed />
         <Messenger />
