@@ -6,7 +6,8 @@
     "time": "1h",
     "post": "Testing out forrestbook",
     "type": "text",
-    "privacy": "public"
+    "privacy": "public",
+    "isLiked": true
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "time": "May 6th at 12:34",
     "privacy": "private",
     "type": "text",
-    "post": "Testing out forrestbook"
+    "post": "Testing out forrestbook",
+    "isLiked": false
   },
   {
     "id": 3,
@@ -25,7 +27,8 @@
     "privacy": "friends",
     "type": "image",
     "post": "Fill Murray",
-    "src": "http://www.fillmurray.com/500/400"
+    "src": "http://www.fillmurray.com/500/400",
+    "isLiked": true
   },
   {
     "id": 4,
@@ -34,7 +37,8 @@
     "time": "14:44pm CST",
     "type": "text",
     "post": "Testing out forrestbook",
-    "privacy": "friends"
+    "privacy": "friends",
+    "isLiked": false
   },
   {
     "id": 5,
@@ -43,7 +47,8 @@
     "time": "14:44pm CST",
     "type": "text",
     "post": "Testing out forrestbook",
-    "privacy": "friends"
+    "privacy": "friends",
+    "isLiked": false
   },
   {
     "id": 6,
@@ -52,7 +57,8 @@
     "time": "1h",
     "post": "Testing out forrestbook",
     "type": "text",
-    "privacy": "public"
+    "privacy": "public",
+    "isLiked": false
   },
   {
     "id": 7,
@@ -61,7 +67,8 @@
     "time": "May 6th at 12:34",
     "privacy": "private",
     "type": "text",
-    "post": "Testing out forrestbook"
+    "post": "Testing out forrestbook",
+    "isLiked": false
   },
   {
     "id": 8,
@@ -71,7 +78,8 @@
     "privacy": "friends",
     "type": "image",
     "post": "Fill Murray",
-    "src": "http://www.fillmurray.com/700/400"
+    "src": "http://www.fillmurray.com/700/400",
+    "isLiked": false
   },
   {
     "id": 9,
@@ -80,7 +88,8 @@
     "time": "14:44pm CST",
     "type": "text",
     "post": "Testing out forrestbook",
-    "privacy": "friends"
+    "privacy": "friends",
+    "isLiked": false
   },
   {
     "id": 5,
@@ -89,6 +98,7 @@
     "time": "14:44pm CST",
     "type": "text",
     "post": "Testing out forrestbook",
-    "privacy": "friends"
+    "privacy": "friends",
+    "isLiked": false
   }
 ]

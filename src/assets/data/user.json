@@ -1,0 +1,12 @@
+[
+  {
+    "user": {
+      "firstName": "Forrest",
+      "lastName": "Morrisey",
+      "DOB": "1990-12-03",
+      "loggedIn?": true,
+      "lastActive": "2021-6-20",
+      "avatar": "../../assets/users/forrest.jpeg"
+    }
+  }
+]
