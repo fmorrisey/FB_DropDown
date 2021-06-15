@@ -10,7 +10,12 @@ export default function Navitem(props) {
 
     return (
       <li className="nav-user">
-        <img src={UsrImg} className="user-avatar-navbar" />
+        <img
+          src={UsrImg}
+          className="user-avatar-navbar"
+          alt={`${User.firstName} ${User.lastName}`}
+          title={`${User.firstName} ${User.lastName}`}
+        />
         {`${User.firstName}`}
       </li>
     );

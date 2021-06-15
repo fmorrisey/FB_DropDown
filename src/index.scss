@@ -57,6 +57,33 @@ hr {
   border: 0.15px solid $border-color;
 }
 
+.user {
+  &-avatar {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 300ms;
+
+    &-navbar {
+      // Controls top navbar display
+      @extend .user-avatar;
+      margin: 5px 5px 5px 0px;
+      $button-size: calc(#{$nav-size} * 0.5);
+      width: $button-size;
+      height: $button-size;
+    }
+
+    &-sidenav {
+      // Controls top sidenav display
+      @extend .user-avatar;
+      $button-size: calc(#{$nav-size} * 0.85);
+      width: $button-size;
+      height: $button-size;
+    }
+  }
+}
+
 /* Navbar */
 
 .navbar {
@@ -73,11 +100,30 @@ hr {
   justify-content: flex-end;
 }
 
-.nav-item {
-  width: calc(#{$nav-size} * 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.nav {
+  &-item {
+    width: calc(#{$nav-size} * 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-user {
+    cursor: pointer;
+    width: calc(#{$nav-size} * 2);
+    border-radius: 25px;
+    padding: 2px 2px 2px 0px;
+    margin: 8px 2px 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-color;
+    transition: background-color 300ms;
+
+    &:hover {
+      background-color: $bg-accent;
+    }
+  }
 }
 
 /* Nav Icons */
