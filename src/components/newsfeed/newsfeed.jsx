@@ -1,8 +1,8 @@
 import React from "react";
 
 import "./newsfeed.scss";
+import CreatePost from "./createpost/createpost";
 
-import CreatePost from "../createpost/createpost";
 import Posts from "./post";
 
 export default function Newsfeed(props) {
