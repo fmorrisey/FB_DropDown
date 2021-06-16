@@ -17,7 +17,7 @@ export default function Posts(props) {
       if (props.image) {
         return (
           <div key={`post-${index}`} className="post-image">
-            <a className="img-wrapper" href="#">
+            <a className="img-wrapper" href="">
               <img src={item.src} alt={item.type} />
             </a>
           </div>
