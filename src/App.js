@@ -17,6 +17,7 @@ import { ReactComponent as MessengerIcon } from "./assets/icons/messenger.svg";
 import { ReactComponent as CaretIcon } from "./assets/icons/caret.svg";
 
 import UserData from "./assets/data/user.json";
+import FeedData from "./assets/data/feed.json";
 
 // @MATERIAL UI
 import FacebookIcon from "@material-ui/icons/Facebook";
@@ -46,8 +47,9 @@ function App() {
           <SideNavItem icon={<EmojiFlagsIcon />} display={"Pages"} />
           <SideNavItem icon={<Groups />} display={"Groups"} />
           <SideNavItem icon={<CaretIcon />} display={"See More"} />
+          <SideNavItem hr={true} />
         </SideNavBar>
-        <Newsfeed />
+        <Newsfeed user={UserData} feed={FeedData} />
         <Messenger />
       </div>
     </>

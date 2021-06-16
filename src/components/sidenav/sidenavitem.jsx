@@ -3,11 +3,13 @@ import "./sidenav.scss";
 import UsrImg from "../../assets/users/forrest.jpeg";
 
 export default function Sidenavitem(props) {
+  console.log(props);
   if (props.user) {
     const User = { ...props.user[0].user };
     return (
       <li className="side-item">
         <span>
+          {/* #TODO Make Avatars a Component  */}
           <img
             src={UsrImg}
             className="icon-left user-avatar-sidenav"
@@ -29,6 +31,14 @@ export default function Sidenavitem(props) {
         </a>
         <span className="display">{props.display}</span>
       </li>
+    );
+  }
+
+  if (props.hr) {
+    return (
+      <span className="side-item">
+        <hr />
+      </span>
     );
   }
 }
