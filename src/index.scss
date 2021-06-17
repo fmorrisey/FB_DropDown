@@ -32,6 +32,10 @@ h2 {
   color: $text-color;
 }
 
+.fbBlue {
+  color: $text-color-blue;
+}
+
 .sub {
   &-title {
     color: $text-color;
@@ -218,9 +222,10 @@ hr {
 
     &__small {
       @extend .icon-account;
-      $button-size: calc(#{$nav-size} * 0.7);
+      $button-size: calc(#{$nav-size} * 0.5);
       width: $button-size;
       height: $button-size;
+      margin: 6px 0;
     }
   }
 
