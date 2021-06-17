@@ -7,7 +7,22 @@
     "post": "Testing out forrestbook",
     "type": "text",
     "privacy": "public",
-    "isLiked": true
+    "isLiked": true,
+    "comments": [
+      {
+        "id": 1,
+        "user": "Dan Sipping",
+        "time": "14:44pm CST",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor.",
+        "isLiked": true
+      },
+      {
+        "id": 2,
+        "user": "Mom",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor.",
+        "isLiked": false
+      }
+    ]
   },
   {
     "id": 2,
@@ -17,7 +32,19 @@
     "privacy": "private",
     "type": "text",
     "post": "Testing out forrestbook",
-    "isLiked": false
+    "isLiked": false,
+    "comments": [
+      {
+        "id": 1,
+        "user": "Dan Sipping",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      },
+      {
+        "id": 2,
+        "user": "Mom",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      }
+    ]
   },
   {
     "id": 3,
@@ -28,7 +55,19 @@
     "type": "image",
     "post": "Fill Murray",
     "src": "http://www.fillmurray.com/500/400",
-    "isLiked": true
+    "isLiked": true,
+    "comments": [
+      {
+        "id": 1,
+        "user": "Dan Sipping",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      },
+      {
+        "id": 2,
+        "user": "Mom",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      }
+    ]
   },
   {
     "id": 4,
@@ -38,7 +77,19 @@
     "type": "text",
     "post": "Testing out forrestbook",
     "privacy": "friends",
-    "isLiked": false
+    "isLiked": false,
+    "comments": [
+      {
+        "id": 1,
+        "user": "Dan Sipping",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      },
+      {
+        "id": 2,
+        "user": "Mom",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      }
+    ]
   },
   {
     "id": 5,
@@ -48,7 +99,19 @@
     "type": "text",
     "post": "Testing out forrestbook",
     "privacy": "friends",
-    "isLiked": false
+    "isLiked": false,
+    "comments": [
+      {
+        "id": 1,
+        "user": "Dan Sipping",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      },
+      {
+        "id": 2,
+        "user": "Mom",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      }
+    ]
   },
   {
     "id": 6,
@@ -58,7 +121,19 @@
     "post": "Testing out forrestbook",
     "type": "text",
     "privacy": "public",
-    "isLiked": false
+    "isLiked": false,
+    "comments": [
+      {
+        "id": 1,
+        "user": "Dan Sipping",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      },
+      {
+        "id": 2,
+        "user": "Mom",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      }
+    ]
   },
   {
     "id": 7,
@@ -68,7 +143,19 @@
     "privacy": "private",
     "type": "text",
     "post": "Testing out forrestbook",
-    "isLiked": false
+    "isLiked": false,
+    "comments": [
+      {
+        "id": 1,
+        "user": "Dan Sipping",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      },
+      {
+        "id": 2,
+        "user": "Mom",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      }
+    ]
   },
   {
     "id": 8,
@@ -79,7 +166,19 @@
     "type": "image",
     "post": "Fill Murray",
     "src": "http://www.fillmurray.com/700/400",
-    "isLiked": false
+    "isLiked": false,
+    "comments": [
+      {
+        "id": 1,
+        "user": "Dan Sipping",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      },
+      {
+        "id": 2,
+        "user": "Mom",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      }
+    ]
   },
   {
     "id": 9,
@@ -89,7 +188,20 @@
     "type": "text",
     "post": "Testing out forrestbook",
     "privacy": "friends",
-    "isLiked": false
+    "isLiked": false,
+    "comments": [
+      {
+        "id": 1,
+        "user": "Dan Sipping",
+        "time": 14,
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      },
+      {
+        "id": 2,
+        "user": "Mom",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      }
+    ]
   },
   {
     "id": 5,
@@ -99,6 +211,18 @@
     "type": "text",
     "post": "Testing out forrestbook",
     "privacy": "friends",
-    "isLiked": false
+    "isLiked": false,
+    "comments": [
+      {
+        "id": 1,
+        "user": "Dan Sipping",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      },
+      {
+        "id": 2,
+        "user": "Mom",
+        "content": "Consectetur velit commodo adipisicing pariatur magna consequat officia excepteur tempor."
+      }
+    ]
   }
 ]
