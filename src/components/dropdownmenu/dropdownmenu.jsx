@@ -42,7 +42,7 @@ export default function DropdownMenu() {
   function DropdownHeader(props) {
     const changeMenu = () => props.goToMenu && setActiveMenu(props.goToMenu);
     return (
-      <a href="" className="menu-header" onClick={changeMenu}>
+      <a href="#" className="menu-header" onClick={changeMenu}>
         <span className={props.leftIcon ? "icon-button__noBG icon-left" : ""}>
           {props.leftIcon}
         </span>
@@ -56,7 +56,7 @@ export default function DropdownMenu() {
 
     return (
       // eslint-disable-next-line jsx-a11y/anchor-is-valid
-      <a href="" className="menu-item" onClick={changeMenu}>
+      <a href="#" className="menu-item" onClick={changeMenu}>
         <span className={props.leftIcon ? " icon-button__BG icon-left" : ""}>
           {props.leftIcon}
         </span>
@@ -77,17 +77,17 @@ export default function DropdownMenu() {
   function DropdownFooter() {
     return (
       <span className="dropdown-footer">
-        <a href="">Privacy</a>
+        <a href="#">Privacy</a>
         <b> · </b>
-        <a href="">Terms</a>
+        <a href="#">Terms</a>
         <b> · </b>
-        <a href="">Advertising</a>
+        <a href="#">Advertising</a>
         <b> · </b>
-        <a href="">Ad Choices</a>
+        <a href="#">Ad Choices</a>
         <b> · </b>
-        <a href="">Cookies</a>
+        <a href="#">Cookies</a>
         <b> · </b>
-        <a href="">More</a>
+        <a href="#">More</a>
         <b> · </b>
         <a>Forrestbook @ 2021</a>
       </span>

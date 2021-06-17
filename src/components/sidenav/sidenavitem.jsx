@@ -26,7 +26,7 @@ export default function Sidenavitem(props) {
     return (
       <li className="side-item">
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a href="" className="icon-left icon-account">
+        <a href="#" className="icon-left icon-account">
           {props.icon}
         </a>
         <span className="display">{props.display}</span>

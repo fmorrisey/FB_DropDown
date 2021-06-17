@@ -17,7 +17,7 @@ export default function Posts(props) {
       if (props.image) {
         return (
           <div key={`post-${index}`} className="post-image">
-            <a className="img-wrapper" href="">
+            <a className="img-wrapper" href="#">
               <img src={postItem.src} alt={postItem.type} />
             </a>
           </div>
@@ -37,7 +37,7 @@ export default function Posts(props) {
               <AccountCircleIcon className="icon-account__small icon-left" />
               <div>
                 <div className="post-comment__content">
-                  <a href="">
+                  <a href="#">
                     <b>{comment.user}</b>
                   </a>
                   <br />
@@ -45,11 +45,11 @@ export default function Posts(props) {
                 </div>
                 <div className="post-comment__engagement">
                   {comment.isLiked ? (
-                    <a href="" className="fbBlue">
+                    <a href="#" className="fbBlue">
                       Like
                     </a>
                   ) : (
-                    <a href="" className="">
+                    <a href="#" className="">
                       Like
                     </a>
                   )}{" "}

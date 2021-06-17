@@ -26,7 +26,7 @@ export default function Navitem(props) {
       <li className="nav-item">
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a
-          href=""
+          href="#"
           className={
             open ? " icon-button__BG icon-button-active" : " icon-button__BG"
           }
