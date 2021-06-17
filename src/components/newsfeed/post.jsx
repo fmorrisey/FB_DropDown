@@ -86,13 +86,13 @@ export default function Posts(props) {
         <hr />
         <div className="post-engagement">
           <span className="post-engagement-action">
-            <ThumbUpAltOutlinedIcon className="icon-like" /> Like
+            <ThumbUpAltOutlinedIcon className="icon-action" /> Like
           </span>
           <span className="post-engagement-action">
-            <ChatBubbleOutlineOutlinedIcon className="icon-comment" /> Comment
+            <ChatBubbleOutlineOutlinedIcon className="icon-action" /> Comment
           </span>
           <span className="post-engagement-action">
-            <CallMadeIcon className="icon-share" /> Share
+            <CallMadeIcon className="icon-action" /> Share
           </span>
         </div>
         <hr />

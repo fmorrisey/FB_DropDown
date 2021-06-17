@@ -27,14 +27,14 @@ export default function CreatePost(props) {
       </div>
       <hr />
       <div className="post-engagement">
-        <span className="post-item">
-          <VideoCallOutlinedIcon className="icon-livevideo" /> Live Video
+        <span className="post-engagement-action">
+          <VideoCallOutlinedIcon className="icon-action" /> Live Video
         </span>
-        <span className="post-item">
-          <PhotoLibraryOutlinedIcon className="icon-media" /> Photo/Video
+        <span className="post-engagement-action">
+          <PhotoLibraryOutlinedIcon className="icon-action" /> Photo/Video
         </span>
-        <span className="post-item">
-          <EmojiEmotionsOutlinedIcon className="icon-feeling" />
+        <span className="post-engagement-action">
+          <EmojiEmotionsOutlinedIcon className="icon-action" />
           Feeling/Activity
         </span>
       </div>

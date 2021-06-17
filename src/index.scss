@@ -229,18 +229,11 @@ hr {
     }
   }
 
-  &-like {
+  &-action {
     margin-right: 0.5rem;
     svg {
       fill: $text-color-alt;
     }
-  }
-
-  &-comment {
-    margin-right: 0.5rem;
-  }
-  &-share {
-    margin-right: 0.5rem;
   }
 }
 

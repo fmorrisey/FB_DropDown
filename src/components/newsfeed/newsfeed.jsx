@@ -9,6 +9,7 @@ export default function Newsfeed(props) {
   console.log("feed here", props.feed);
   return (
     <div className="feed">
+      {/* #TODO: Add filtering */}
       <CreatePost user={props.user} />
       <Posts feed={props.feed} />
     </div>
