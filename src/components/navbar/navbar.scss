@@ -1,0 +1,43 @@
+@import "../../scss/variables";
+@import "../../scss/utils";
+
+/* Navbar */
+.navbar {
+  height: $nav-size;
+  background: $bg;
+  padding: 0 1rem;
+  border-bottom: $border;
+}
+
+.navbar-nav {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav {
+  &-item {
+    width: calc(#{$nav-size} * 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-user {
+    cursor: pointer;
+    width: calc(#{$nav-size} * 2);
+    border-radius: 25px;
+    padding: 2px 2px 2px 0px;
+    margin: 8px 2px 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-color;
+    transition: background-color 300ms;
+
+    &:hover {
+      background-color: $bg-accent;
+    }
+  }
+}
