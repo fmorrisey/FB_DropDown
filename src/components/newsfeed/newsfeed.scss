@@ -21,19 +21,15 @@
     border-radius: 10px;
     width: clamp(33vw, 680px, 35vw);
 
-    &-engagement {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-
+    // Comment Section of Posts
     &-comment {
       display: flex;
       justify-content: flex-end;
 
+      // Styles the input box
       &__input {
         padding: 8px 12px;
-        margin-right: auto;
+        margin: 6px auto 6px 8px;
 
         background-color: #3a3b3c;
 
@@ -49,25 +45,74 @@
           outline-style: none;
         }
       }
+
+      // Styles each post comment content
+
+      &__content {
+        padding: 8px 12px;
+        margin: 4px auto 4px 8px;
+
+        background-color: #3a3b3c;
+
+        font-size: 1rem;
+        color: $text-color;
+        border-radius: 15px;
+        border: 0px;
+
+        & > b {
+          line-height: 0.75em;
+        }
+
+        & > a {
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+
+      &__engagement {
+        margin: 4px auto 4px 20px;
+        & > a {
+          text-decoration: none;
+          &:hover {
+            color: $text-color-blue;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
     }
 
-    &-item {
-      height: 20px;
-      width: 100%;
+    // Post Engagement Section
+    &-engagement {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: $border-radius;
-      transition: background $speed;
-      padding: 0.5rem;
-      margin-right: 0.5rem;
+      flex-direction: row;
+      justify-content: space-around;
+
+      // Like | Comment | Share
+      &-action {
+        @extend .post-engagement;
+        height: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: $border-radius;
+        transition: background $speed;
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+
+        // Hover Effect
+        &:hover {
+          cursor: pointer;
+          background-color: #525357;
+        }
+      }
     }
 
-    &-item:hover {
-      cursor: pointer;
-      background-color: #525357;
-    }
-
+    // Styles image included in the post
     &-image {
       text-align: center;
       .img-wrapper {
@@ -79,12 +124,10 @@
     }
   }
 
+  // Styles the header
   .header {
     display: flex;
     flex-direction: row;
-  }
-
-  .top {
   }
 
   .username {
