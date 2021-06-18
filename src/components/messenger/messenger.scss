@@ -9,13 +9,10 @@
   display: flex;
 
   .friend {
-    $content-padding: 10px;
     color: $text-color;
     background-color: $bg-body;
     margin: 0px;
-    margin-right: 2vw;
-    // margin-left: 2vw;
-    padding: $content-padding;
+    margin-right: 1vw;
     border-radius: 10px;
 
     &-item {
@@ -26,7 +23,6 @@
       justify-content: start;
       border-radius: $border-radius;
       transition: background $speed;
-      padding: 0.5rem;
       //   margin-right: 0.5rem;
     }
 
@@ -49,18 +45,18 @@
   .header {
     display: flex;
     flex-direction: row;
-    padding-inline: 0.5rem;
-    padding-right: 0.5rem;
     color: $text-color-alt;
+    line-height: 0;
+    font-weight: 300;
   }
 
   .username {
     display: flex;
-    font-size: 1.05rem;
-    font-weight: bold;
+    font-size: 0.95rem;
     line-height: 1.5em;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 10px;
   }
 
   .active {
@@ -69,21 +65,21 @@
     }
 
     &-dot {
-      background: green;
+      background: limegreen;
       border-radius: 50%;
       border: 2px solid $bg-body;
       position: absolute;
       z-index: 10;
       bottom: 0;
-      transform: translateY(155%);
-      width: 12px;
-      height: 12px;
+      transform: translateY(145%);
+      width: 8px;
+      height: 8px;
     }
 
     &-last {
       background-color: #364a37;
       border: 2px solid $bg-body;
-      color: #43a059;
+      color: limegreen;
       padding-right: 22px;
       padding-left: 2px;
       padding-bottom: 7px;
@@ -93,8 +89,9 @@
       bottom: 0;
       right: 5px;
       transform: translate(70%, 140%);
-      width: 12px;
-      height: 12px;
+      width: 5px;
+      height: 8px;
+      font-size: 0.75rem;
     }
   }
 

@@ -70,7 +70,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: filter 300ms;
+    transition: filter $filter-speed;
 
     &-navbar {
       // Controls top navbar display
@@ -104,7 +104,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: filter 300ms;
+    transition: filter $filter-speed;
 
     &__BG {
       @extend .icon-button;
@@ -120,7 +120,7 @@ hr {
     }
 
     &:hover {
-      filter: brightness(1.2);
+      filter: $filter-effect;
     }
 
     svg {
@@ -168,11 +168,11 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: filter 300ms;
+    transition: filter $filter-speed;
     background-color: #484a4d;
 
     &:hover {
-      filter: brightness(1.2);
+      filter: $filter-effect;
     }
 
     svg {

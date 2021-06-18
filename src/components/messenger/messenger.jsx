@@ -24,7 +24,7 @@ export default function messenger(props) {
 
     return (
       <div key={index} className="friend-item">
-        <span className="icon-account icon-left">
+        <span className="icon-account__small icon-left">
           <AccountCircleIcon />
           <ActiveUser />
         </span>
@@ -37,7 +37,11 @@ export default function messenger(props) {
     <div className="messenger">
       <div>
         <span className="header">
-          <h3>Contacts</h3>
+          <h4>Sponsored</h4>
+        </span>
+        <hr />
+        <span className="header">
+          <h4>Contacts</h4>
         </span>
         {/* <span className="icon icon-button">
           <VideoCallIcon />

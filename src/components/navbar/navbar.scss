@@ -23,7 +23,7 @@
   // Styles the input box
   span .search {
     display: inline;
-    transition: filter 300ms;
+    transition: filter $filter-speed;
 
     &-input {
       z-index: 10;
@@ -41,7 +41,7 @@
       width: 15%;
       // #TODO: Correct hover and focus events
       &:focus {
-        filter: brightness(1.2);
+        filter: $filter-effect;
         outline-color: transparent;
         outline-style: none;
       }
@@ -65,7 +65,7 @@
       top: 0px;
       cursor: pointer;
       color: $text-color;
-      transition: filter 300ms;
+      transition: filter $filter-speed;
     }
   }
 }
@@ -99,7 +99,7 @@
     align-items: center;
     justify-content: center;
     color: $text-color;
-    transition: background-color 300ms;
+    transition: background-color $filter-speed;
 
     &:hover {
       background-color: $bg-accent;

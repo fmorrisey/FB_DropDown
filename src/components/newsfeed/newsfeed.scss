@@ -40,9 +40,9 @@
 
         width: 85%;
         height: 30px;
-        &:focus {
-          outline-color: transparent;
-          outline-style: none;
+        transition: filter $filter-speed;
+        &:hover {
+          filter: $filter-effect;
         }
       }
 
