@@ -9,6 +9,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: $bg-body;
+  // Disables the horizontal scroll
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 code {

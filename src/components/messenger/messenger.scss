@@ -2,9 +2,11 @@
 @import "../../scss/utils";
 
 .messenger {
-  display: flex;
+  position: fixed;
+  right: 0;
   width: clamp(18vw, 200px, 20vw);
   flex-direction: column;
+  display: flex;
 
   .friend {
     $content-padding: 10px;

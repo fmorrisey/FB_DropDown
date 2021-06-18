@@ -2,8 +2,11 @@
 @import "../../scss/utils";
 
 .sidenav {
+  position: fixed;
+  left: 0;
+
   display: flex;
-  width: clamp(22vw, 200px, 33vw);
+  width: clamp(22vw, 200px, 32vw);
   flex-direction: column;
   margin-top: 1vw;
   color: $text-color;
