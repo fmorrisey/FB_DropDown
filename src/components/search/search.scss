@@ -1,0 +1,48 @@
+// Styles the input box
+span .search {
+  display: inline;
+  transition: filter $filter-speed;
+
+  &-input {
+    z-index: 10;
+    $search-size: calc(#{$nav-size} * 0.225);
+    $search-h-margin: calc((#{$nav-size} - #{$search-size}) / 6.5);
+    position: absolute;
+    top: 0;
+    padding: $search-size;
+    margin: $search-h-margin 2.5px;
+    background-color: #3a3b3c;
+    font-size: 1rem;
+    color: $text-color;
+    border-radius: 0px 25px 25px 0px;
+    border: 0px;
+    width: 15%;
+    // #TODO: Correct hover and focus events
+    &:focus {
+      filter: $filter-effect;
+      outline-color: transparent;
+      outline-style: none;
+    }
+  }
+
+  &-icon {
+    border-radius: 25px 0px 0px 25px;
+    $search-size: calc(#{$nav-size} * 0.155);
+    $search-h-margin: calc((#{$nav-size} - #{$search-size}) / 6.5);
+    position: absolute;
+    top: 0;
+    padding: $search-size;
+    margin: $search-h-margin 0;
+    background-color: #3a3b3c;
+    z-index: 200;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 15px;
+    top: 0px;
+    cursor: pointer;
+    color: $text-color;
+    transition: filter $filter-speed;
+  }
+}
