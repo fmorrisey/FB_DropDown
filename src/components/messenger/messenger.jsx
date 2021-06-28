@@ -24,7 +24,7 @@ export default function messenger(props) {
 
     return (
       <div key={index} className="friend-item">
-        <span className="icon-account__small icon-left">
+        <span className="icon-account__small icon-left mr">
           <AccountCircleIcon />
           <ActiveUser />
         </span>
