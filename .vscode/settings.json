@@ -1,19 +1,22 @@
 {
     "workbench.colorCustomizations": {
-        "activityBar.activeBackground": "#5195f6",
-        "activityBar.activeBorder": "#b60950",
-        "activityBar.background": "#5195f6",
-        "activityBar.foreground": "#15202b",
-        "activityBar.inactiveForeground": "#15202b99",
-        "activityBarBadge.background": "#b60950",
-        "activityBarBadge.foreground": "#e7e7e7",
-        "statusBar.background": "#2078f4",
+        "activityBar.activeBackground": "#2890f9",
+        "activityBar.activeBorder": "#fdc1df",
+        "activityBar.background": "#2890f9",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#fdc1df",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBar.background": "#0676e8",
         "statusBar.foreground": "#e7e7e7",
-        "statusBarItem.hoverBackground": "#5195f6",
-        "titleBar.activeBackground": "#2078f4",
+        "statusBarItem.hoverBackground": "#2890f9",
+        "titleBar.activeBackground": "#0676e8",
         "titleBar.activeForeground": "#e7e7e7",
-        "titleBar.inactiveBackground": "#2078f499",
+        "titleBar.inactiveBackground": "#0676e899",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#2078f4"
+    "peacock.color": "#0676E8",
+    "cSpell.words": [
+        "Newsfeed"
+    ]
 }
