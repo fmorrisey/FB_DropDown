@@ -37,6 +37,9 @@ export default function Posts(props) {
           </div>
         );
       }
+      if (!props.image) {
+        return null;
+      }
     }
 
     // Comments Component
@@ -77,7 +80,7 @@ export default function Posts(props) {
       });
     }
 
-    // POST COMPONENT
+    // Post Component
     return (
       // This is where the above functional components
       // are constructed into post components and returned to the DOM
