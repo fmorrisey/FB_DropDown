@@ -1,3 +1,12 @@
+/*  POST COMPONENT
+This component builds the final posts before being returned
+to the newsfeed component using the JSON config data passed
+down from the app component.
+
+Some smaller functions are self containing and other are external functions
+
+*/
+
 import React from "react";
 import Privacy from "./privacy";
 import "./newsfeed.scss";
@@ -9,10 +18,15 @@ import ThumbUpAltOutlinedIcon from "@material-ui/icons/ThumbUpAltOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@material-ui/icons/ChatBubbleOutlineOutlined";
 import CallMadeIcon from "@material-ui/icons/CallMade";
 
+// Feed data is passed from App.js -> Newsfeed -> Post
 export default function Posts(props) {
-  // Feed data is passed from App.js -> newsfeed -> posts
+  // Creates an array of the objects that contains the posts
   const posts = props.feed.map((postItem, index) => {
+    // Image Post Component
     function PostImage(props) {
+      // When the post type is an image
+      // it passes the url to thru
+      // and returns a post formatted for images
       console.log(props.image);
       if (props.image) {
         return (
@@ -23,12 +37,11 @@ export default function Posts(props) {
           </div>
         );
       }
-      if (!props.image) {
-        return null;
-      }
     }
 
+    // Comments Component
     function Comments(props) {
+      // Map the array of comments attached to the post
       return props.postComments.map((comment, index) => {
         console.log("comment", comment.isLiked);
         return (
@@ -43,7 +56,9 @@ export default function Posts(props) {
                   <br />
                   {comment.content}
                 </div>
+                {/* Sets the state of the comment's like */}
                 <div className="post-comment__engagement">
+                  {/* isTrue sets text to blue */}
                   {comment.isLiked ? (
                     <a href="#" className="fbBlue">
                       Like
@@ -62,8 +77,12 @@ export default function Posts(props) {
       });
     }
 
+    // Post Component
     return (
+      // This is where the above functional components
+      // are constructed into post components and returned to the DOM
       <div key={index} className="post">
+        {/* The header of the post containing name, time, privacy status */}
         <div className="header">
           <span className="icon-account icon-left">
             <AccountCircleIcon />
@@ -78,12 +97,21 @@ export default function Posts(props) {
             <MoreHorizIcon />
           </a>
         </div>
+
+        {/* CONTENT OF THE POST
+        currently limited to text or image 
+        */}
         <div className="content">
+          {/* Post Text */}
           <p>{postItem.post}</p>
+          {/* Post Image if image === isTrue */}
           <PostImage image={postItem.src} />
         </div>
 
+        {/* Display HR */}
         <hr />
+
+        {/* Engagement with the post */}
         <div className="post-engagement">
           <span className="post-engagement-action">
             <ThumbUpAltOutlinedIcon className="icon-action" /> Like
@@ -95,8 +123,15 @@ export default function Posts(props) {
             <CallMadeIcon className="icon-action" /> Share
           </span>
         </div>
+
+        {/* Display HR */}
         <hr />
+
+        {/* Comments component returns the comments array to the DOM */}
         <Comments postComments={postItem.comments} />
+
+        {/* User Comments
+        Currently display only, non-functional  */}
         <div className="post-comment">
           <span className="icon-account__small icon-left">
             <AccountCircleIcon />
