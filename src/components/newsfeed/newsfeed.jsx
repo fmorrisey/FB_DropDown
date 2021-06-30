@@ -1,3 +1,10 @@
+/**
+ * NEWSFEED COMPONENT
+ * Currently contains
+ * - Status update (create post )
+ * - Posts
+ */
+
 import React from "react";
 
 import "./newsfeed.scss";

@@ -1,2 +1,70 @@
-@import "../../scss/variables";
-@import "../../scss/utils";
+@import "../../../scss/variables";
+@import "../../../scss/utils";
+
+.shortcuts {
+  max-width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  //   width: clamp(60vw, 1200px, 66vw);
+
+  &-engagement {
+    /** 
+    * Shortcut button width is the total width of the post object
+    * plus 12px margin times 2 on each side for 24px
+    * divided by the number of buttons
+    */
+    $shortcut-total-width: (#{$content-width} + 24px);
+    $shortcut-button-width: calc((#{$shortcut-total-width}) / 5);
+    width: $shortcut-button-width;
+
+    flex-direction: row;
+    justify-content: space-around;
+
+    // Like | Comment | Share
+    &-default {
+      @extend .shortcuts-engagement;
+      height: $nav-size;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: $border-radius;
+      transition: background $speed;
+      //   padding: 0.5rem;
+      //   margin-right: 0.5rem;
+
+      svg {
+        fill: $text-color;
+        width: 28px;
+        height: 28px;
+      }
+
+      // Hover Effect
+      &:hover {
+        cursor: pointer;
+        background-color: #525357;
+      }
+    }
+
+    &-active {
+      @extend .shortcuts-engagement;
+      height: calc(#{$nav-size} -5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-bottom: 5px solid $text-color-blue;
+      border-radius: 0px;
+      height: calc(#{$nav-size} - 5px);
+      svg {
+        fill: $text-color-blue;
+        transform: translateY(2px);
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+}
