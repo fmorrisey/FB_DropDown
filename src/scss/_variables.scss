@@ -11,6 +11,9 @@ $border: 1px solid #484a4d;
 $border-color: #484a4d;
 $border-radius: 8px;
 
+// Sets the width for posts and nav shortcuts
+$content-width: clamp(33vw, 680px, 35vw);
+
 $speed: 500ms;
 
 $filter-speed: 200ms;
