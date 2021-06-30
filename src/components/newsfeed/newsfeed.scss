@@ -19,7 +19,7 @@
     margin: 10px;
     padding: $content-padding;
     border-radius: 10px;
-    width: clamp(33vw, 680px, 35vw);
+    width: $content-width;
 
     // Comment Section of Posts
     &-comment {
