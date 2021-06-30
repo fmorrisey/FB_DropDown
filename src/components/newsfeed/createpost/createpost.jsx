@@ -1,5 +1,6 @@
 /*
     CREATE POST COMPONENT
+    STATUS UPDATE
 
     Located at the top of the newsfeed, this allows the user to share
     their status on fb_clone. Non-functional display only with

@@ -1,3 +1,10 @@
+/**
+ *
+ * FB_CLONE APP COMPONENT
+ *
+ * The TOP-LEVEL Component for the entire project.
+ */
+
 // BUILT INS
 import React, { useState } from "react";
 
@@ -31,6 +38,7 @@ function App() {
   return (
     <>
       <Navbar>
+        {/* Move these nav-items into the navbar */}
         <Navitem user={UserData} />
         <Navitem icon={<AppsIcon />} />
         <Navitem icon={<MessengerIcon />} />
@@ -41,6 +49,7 @@ function App() {
       </Navbar>
       <div className="flex-row">
         <SideNavBar>
+          {/* Move these sidenav-items into the sidenavbar */}
           <SideNavItem user={UserData} />
           <SideNavItem icon={<PeopleIcon />} display={"Friends"} />
           <SideNavItem icon={<RestoreIcon />} display={"Memories"} />

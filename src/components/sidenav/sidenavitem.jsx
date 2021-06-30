@@ -1,3 +1,12 @@
+/**
+ * SIDENAV ITEM COMPONENT
+ *
+ * This is child of SideNavbar component. Contains two conditionals
+ * that reacts to the props of either a user or icon.
+ *
+ * See App.js for more details related to this component.
+ */
+
 import React from "react";
 import "./sidenav.scss";
 import UsrImg from "../../assets/users/forrest.jpeg";
