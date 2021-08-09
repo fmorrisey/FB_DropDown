@@ -16,6 +16,4 @@ This was originally a Facebook inspired dropdown menu project that spawned into 
 - Facebook inspired dropdown menu.
 - Facebook inspired dynamic newsfeed.
 
-### \* this project is in no way affiliated with Facebook or their subsidiaries
-
-### and is purely for self-enrichment and professional development purposes.
+### \* this project is in no way affiliated with Facebook or their subsidiaries and is purely for self-enrichment and professional development purposes.
