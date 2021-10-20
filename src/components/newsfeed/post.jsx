@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /*  POST COMPONENT
 This component builds the final posts before being returned
 to the newsfeed component using the JSON config data passed
@@ -7,7 +8,7 @@ Some smaller functions are self containing and other are external functions
 
 */
 
-import React from "react";
+import React, { useState } from "react";
 import Privacy from "./privacy";
 import "./newsfeed.scss";
 
@@ -20,6 +21,9 @@ import CallMadeIcon from "@material-ui/icons/CallMade";
 
 // Feed data is passed from App.js -> Newsfeed -> Post
 export default function Posts(props) {
+  const [isLiked, setLike] = useState(false);
+  const toogleLike = () => setLike(!isLiked);
+
   // Creates an array of the objects that contains the posts
   const posts = props.feed.map((postItem, index) => {
     // Image Post Component
@@ -116,7 +120,13 @@ export default function Posts(props) {
 
         {/* Engagement with the post */}
         <div className="post-engagement">
-          <span className="post-engagement-action">
+          <span
+            className={
+              postItem.isLiked
+                ? "post-engagement-action fbBlue"
+                : "post-engagement-action"
+            }
+          >
             <ThumbUpAltOutlinedIcon className="icon-action" /> Like
           </span>
           <span className="post-engagement-action">
