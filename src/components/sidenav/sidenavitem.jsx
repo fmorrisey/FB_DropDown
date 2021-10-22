@@ -12,7 +12,7 @@ import "./sidenav.scss";
 import UsrImg from "../../assets/users/forrest.jpeg";
 
 export default function Sidenavitem(props) {
-  console.log(props);
+  console.log("sideNav", props);
   if (props.user) {
     const User = { ...props.user[0].user };
     return (
