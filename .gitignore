@@ -108,3 +108,6 @@ dist
 
 #Assets
 f-logos-2019-1/
+
+#VSCode Settings
+.vscode/
