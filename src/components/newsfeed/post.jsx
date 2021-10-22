@@ -8,7 +8,7 @@ Some smaller functions are self containing and other are external functions
 
 */
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Privacy from "./privacy";
 import "./newsfeed.scss";
 
@@ -22,7 +22,7 @@ import CallMadeIcon from "@material-ui/icons/CallMade";
 // Feed data is passed from App.js -> Newsfeed -> Post
 export default function Posts(props) {
   const [isLiked, setLike] = useState(false);
-  const toogleLike = () => setLike(!isLiked);
+  const toggleLike = () => setLike(!isLiked);
 
   // Creates an array of the objects that contains the posts
   const posts = props.feed.map((postItem, index) => {
@@ -50,7 +50,6 @@ export default function Posts(props) {
     function Comments(props) {
       // Map the array of comments attached to the post
       return props.postComments.map((comment, index) => {
-        console.log("comment", comment.isLiked);
         return (
           <>
             <div key={index} className="post-comment">
@@ -121,6 +120,7 @@ export default function Posts(props) {
         {/* Engagement with the post */}
         <div className="post-engagement">
           <span
+            onClick={toggleLike}
             className={
               postItem.isLiked
                 ? "post-engagement-action fbBlue"
