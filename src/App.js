@@ -38,7 +38,7 @@ function App() {
   return (
     <>
       <Navbar>
-        {/* Move these nav-items into the navbar */}
+        {/* TODO: Move these nav-items into the navbar */}
         <Navitem user={UserData} />
         <Navitem icon={<AppsIcon />} />
         <Navitem icon={<MessengerIcon />} />
@@ -49,7 +49,7 @@ function App() {
       </Navbar>
       <div className="flex-row">
         <SideNavBar>
-          {/* Move these sidenav-items into the sidenavbar */}
+          {/* TODO: Move these sidenav-items into the sidenavbar */}
           <SideNavItem user={UserData} />
           <SideNavItem icon={<PeopleIcon />} display={"Friends"} />
           <SideNavItem icon={<RestoreIcon />} display={"Memories"} />

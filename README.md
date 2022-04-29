@@ -17,3 +17,10 @@ This was originally a Facebook inspired dropdown menu project that spawned into 
 - Facebook inspired dynamic newsfeed.
 
 ### \* this project is in no way affiliated with Facebook or their subsidiaries and is purely for self-enrichment and professional development purposes.
+
+
+### TODO:
+- Shift Top and Side Nav child components down into their own files
+  - Collapsible sidebar for 'See More'
+- Add Messenger UI components
+- *Stretch Goal*: Add posting capabilities 
